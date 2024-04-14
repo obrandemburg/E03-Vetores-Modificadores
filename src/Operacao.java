@@ -12,13 +12,13 @@ import java.util.Date;
 public class Operacao {
 
     /* Data de realização da operação */
-    public Date data;
+    private Date data;
 
     /* Tipo da operação */
-    public char tipo;
+    private char tipo;
 
     /* Valor da operação */
-    public double valor;
+    private double valor;
 
     /**
      * Construtor. Inicializa uma nova instância da classe Operacao onde a data da operação é exatamente a data
@@ -37,5 +37,12 @@ public class Operacao {
         this.valor = valor;
         data = new Date();
     }
+
+    void imprimir_Estrato(){
+            System.out.print(data);
+            System.out.printf("%c %f\n", tipo,valor);
+
+        }
+
 
 }
